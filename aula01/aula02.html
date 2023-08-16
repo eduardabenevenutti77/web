@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ª de programação web</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        h1{
+            text-align: center;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body style="background-color:beige;">
+    <!--<h2>exemplo</h2>
+    <video width="320" height="240" controls>
+        <source href="https://youtu.be/bc4ug-n5-ac?si=GAWLarpXsGQNA045" type="video/link">
+    </video>
+    <h2>frame</h2>
+    <iframe src="https://www.terra.com.br" width="600px" height="500px" frameborder="0"></iframe>-->
+    <h1>tabelas: </h1>
+        <table border="1">
+            <caption>Exemplo 01</caption>
+        <tr>
+            <th style="background-color:antiquewhite;">Nome </th> <!--th: titulo da tabela-->
+            <th style="background-color:antiquewhite;">Idade </th>
+            <th style="background-color:antiquewhite;">E-mail </th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">Mª Eduarda Benevenutti </td>
+            <td style="text-align: center;">18 </td>
+            <td style="text-align: center;">maria.benevenutti@alunos.sc.senac </td>
+        </tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>Exemplo 02</caption>
+        <tr>
+            <th style="background-color:antiquewhite;">Nome</th>
+            <td style="text-align: center;">Mª Eduarda Benevenutti </td>
+            <td style="text-align: center;">Luiza </td>
+        </tr>
+        <tr>
+            <th style="background-color:antiquewhite;">Idade</th>
+            <td style="text-align: center;">18 </td>
+            <td style="text-align: center;">19 </td>
+        </tr>
+        <tr>
+            <th style="background-color:antiquewhite;">E-mail</th>
+            <td style="text-align: center;">maria.benevenutti@alunos.sc.senac </td>
+            <td style="text-align: center;">luiza@alunos.sc.senac </td>
+        </tr>
+        <tr >
+            <td style="background-color:antiquewhite;" colspan="3">Rodapé</td>
+        </tr>
+        </table>
+        <br>
+        <h1>Formulários </h1>
+        <br>
+        <form action="">
+                <fieldset>
+                    <legend>Cadastro de Usuário</legend>
+                    <label for="name" >Nome: </label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Nome">
+                    <br>
+                    <label for="lastName">Sobrenome: </label>
+                    <br>
+                    <input type="text" id="lastName" name="lastName">
+                    <br>
+                    <label for="email">E-mail: </label>
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="E-mail">
+                    <br>
+                    <label for="senha">Senha: </label>
+                    <br>
+                    <input type="password" id="senha" name="senha">
+                    <br>
+                    <br>
+                    <label for="og">Filmes </label>
+                    <select name="og" id="og">
+                        <option value="">Selecione</option>
+                        <option value="terror">Terror</option>
+                        <option value="drama">Drama</option>
+                        <option value="russian">Russian</option>
+                        <option value="curta">Curta</option>
+                    </select>
+                    <br>
+                    <h4>Aonde vc deseja assistir?</h4>
+                    <input type="radio"><label for="filmes">Netflix</label>
+                    <br>
+                    <input type="radio"><label for="filmes">Prime Video</label>
+                    <br>
+                    <input type="radio"><label for="filmes">Disney+</label>
+                    <br>
+                    <input type="radio"><label for="filmes">Globo Play</label>
+                    <br>
+                    <br>
+                    <label for="txtArea">Descrição: </label>
+                    <br>
+                    <textarea name="txtArea"  cols="30" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="auto" name="auto"> <label for="">Autoriza a divulgação dos seus dados</label>
+                    <br>
+                    <br>
+                    <!--<button style="background-color: antiquewhite;">Enviar</button>
+                    <button style="background-color: antiquewhite;" type="submit">Apagar</button>-->
+                    <input type="submit" value="Enviar" name="btnEnviar" style="background-color: antiquewhite;">
+                    <input type="reset" value="Limpar Formulário" style="background-color: antiquewhite;">
+            </fieldset>
+        </form>
+</body>
+</html>
