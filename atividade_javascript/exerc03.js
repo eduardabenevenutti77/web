@@ -9,11 +9,19 @@ let numerosPares = 0;
 let numerosImpares = 0;
 for(let i=0;i<=numeros.length;i++){
     if(numeros[i]%2==0){
-        numerosPares++;
+        numerosPares +=numeros[i];
     }else{
-        numerosImpares++;
+        numerosImpares += numeros[i];
     }
 }
 
 console.log("A média de números pares: "+numerosPares);
 console.log("A média de números ímpares: "+numerosImpares);
+
+let numerosPrimos = 0;
+for(let i=0;i<=numeros.length;i++){
+    if(numeros[i]/numeros[i]==0){
+        numerosPrimos += numeros[i];
+    }
+}
+console.log("A soma dos números primos: "+numerosPrimos);
