@@ -32,7 +32,7 @@ alert("O total de mulheres: "+totalFem);
 let mediaIdade = 0;
 for(let i=0;i<=idades.length;i++){
     if(sexos[i] == 2){
-        mediaIdade++;
+        mediaIdade += idades[i];
     }
 }
 alert("A média da idade masculina é: "+mediaIdade);
@@ -40,7 +40,7 @@ alert("A média da idade masculina é: "+mediaIdade);
 let mediaPeso = 0;
 for(let i=0;i<=pesos.length;i++){
     if (sexos[i] == 1) {
-        mediaPeso++;
+        mediaPeso += pesos[i];
     }
 }
 alert("A média de pesos da mulheres é: "+mediaPeso);
