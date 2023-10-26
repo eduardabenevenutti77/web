@@ -13,7 +13,6 @@ carro.cor = 'preto';
 console.log(carro.cor);
 console.log(carro.buzinar());
 
-
 const carro2 = new Object();
 carro2.modelo = 'mobi';
 carro2.tipo = 'fiat';
