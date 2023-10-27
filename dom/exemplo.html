@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 1</title>
+</head>
+<body>
+    <h1 id="title">olá mundo</h1>
+    <p class="text">Este é um parágrafo</p>
+    <p class="text">Este é um parágrafo</p>
+    <div id="div"></div>
+    <a id="link" href="www.google.com.br">Google</a>
+    <script>
+        //a)selecione o h1 e altere o texto
+        let title = document.getElementById("title");
+        title.innerText = "esse é o novo parágrafo";
+        title.style.color = 'brown';
+        console.log(title);
+
+        //b
+        let paragrafo = document.getElementsByClassName("text");
+        paragrafo[0].style.color = 'purple';
+        paragrafo[1].style.color = 'yellow';
+
+        //c
+        let first = document.querySelector('.text');
+        first.innerText = 'olá people';
+
+        //d
+        let todosParagrafos = document.querySelgctorAll('p');
+        console.log(`exitem ${todosParagrafos.length} parágrafos na página!!!`);
+
+        //e
+        let novo = document.createElement("p");
+        novo.innerText = 'este parágrafo foi criado dinamicamente';
+        let novaDiv = document.getElementById("div");
+        novaDiv.appendChild(novo);
+        novo.style.color = "red";
+
+        let link = document.getElementById("link");
+        link.setAttribute('href','https://www.netflix.com');
+        console.log(link.getAttribute('href'));
+    </script>
+</body>
+</html>
