@@ -1,0 +1,11 @@
+#myParagraph{
+    transition:  background-color0.5s;
+}
+#myParagraph:hover{
+    background-color: crimson;
+}
+p{
+    font-weight: 600;
+    color: black;
+    font-size: 25px;
+}
