@@ -10,7 +10,8 @@ frm.addEventListener("submit", (e) =>{
     const entrada = valor * 0.50
     const parcela = entrada / 12
 
-    alert("promoção : " + carro)
-    alert("entrada de :  " + entrada)
-    alert("+ 12x de " + parcela.toFixed(2))
+
+    r1.innerText = `O carro em promoção é - ${carro} - VALOR: R$: ${valor}`
+    r2.innerText = `O valor de entrada será de R$: ${entrada}`
+    r1.innerText = `+12x de R$: ${parcela.toFixed(2)}`
 })

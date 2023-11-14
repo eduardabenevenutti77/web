@@ -1,12 +1,12 @@
-const frm = document.querySelector("form")
-const resp = document.querySelector("h3")
+let frm = document.querySelector("form")
+let resp = document.querySelector("h3")
 
 frm.addEventListener("submit", (e) =>{
-    const quilo = Number(frm.inBuffer.value)
-    const consumo = Number(frm.inConsumo.value)
+    let quilo = Number(frm.inBuffer.value)
+    let consumo = Number(frm.inConsumo.value)
 
-    const valor = (quilo / 1000) * consumo
-    resp.innerHTML = 'o valor a ser pago é ${valor.toFixed(2)}'
+    let valor = (quilo / 1000) * consumo
+    resp.innerText = `O valor a ser pago é de R$: ${valor.toFixed(2)}`
 
     e.preventDefault()
 })
