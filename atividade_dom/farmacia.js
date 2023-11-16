@@ -11,5 +11,8 @@ frm.addEventListener("submit", (e) =>{
     resp1.innerText = `Promoção de  ${medicamento}`
     resp2.innerText = `Leve 2 por apenas R$: ${valor}`
 
+    alert("Promoção de "+medicamento)
+    alert("Leve 2 por apenas R$:"+promo)
+
     e.preventDefault()
 })

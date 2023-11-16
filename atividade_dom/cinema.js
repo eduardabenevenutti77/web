@@ -8,4 +8,7 @@ frm.addEventListener('submit',  function() {
     let valor = (15 * uso) / tempo;
 
     resp1.innerText = `Valor a Pagar R$: ${valor}`;
+    alert("Valor a Pagar R$: "+valor);
+
+    e.preventDefault()
 })

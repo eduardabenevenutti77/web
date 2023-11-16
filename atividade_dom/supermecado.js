@@ -9,5 +9,8 @@ frm.addEventListener("submit", (e) =>{
     let p3 = preco - 3
 
     resp.innerText = `${prod} - Promoção: leve 3 produtos de: R$: ${preco} cada, comprando junto saí por apenas R$: ${p3}`
-    alert(prod + " - PROMOÇÃO LEVE 3 PRODUTOS POR: " + p1 + ", com o 3 produto saindo por apenas " + p3 + " reais!! Não perca." )
+
+    alert(prod + " - PROMOÇÃO LEVE 3 PRODUTOS POR: " + p1 + ", o 3º produto custa apenas " + p3 + " reais!! Não perca." )
+
+    e.preventDefault()
 })

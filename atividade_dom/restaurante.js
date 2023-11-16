@@ -8,5 +8,7 @@ frm.addEventListener("submit", (e) =>{
     let valor = (quilo / 1000) * consumo
     resp.innerText = `O valor a ser pago é de R$: ${valor.toFixed(2)}`
 
+    alert("O valor a ser pago é de R$:"+valor.toFixed(2))
+
     e.preventDefault()
 })

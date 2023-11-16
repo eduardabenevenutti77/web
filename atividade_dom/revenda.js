@@ -15,5 +15,9 @@ frm.addEventListener("submit", (e) =>{
     r2.innerText = `O valor de entrada será de R$: ${entrada}`
     r1.innerText = `+12x de R$: ${parcela.toFixed(2)}`
 
+    alert("O carro em promoção é -"+carro+" - VALOR: R$:"+valor)
+    alert("O valor de entrada será de R$:"+entrada)
+    alert("+12x de R$:"+parcela.toFixed(2))
+
     e.preventDefault()
 })
