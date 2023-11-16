@@ -62,6 +62,22 @@
             }
             return this.el.innerHTML = data;
         }
+
+        function cadPet(){
+            let nome = document.getElementById('pet');
+            let idade = document.getElementById('idade');
+            let tutor = document.getElementById('tutor');
+
+            if(nome.value && idade.value && tutor.value){
+                let objPet = new Object();
+                objPet.nome = nome.value;
+                objPet.idade = idade.value;
+                objPet.tutor = tutor.value;
+
+                array.push(objPet);
+            }
+            listPet();
+        }
     </script>
 </body>
 </html>
