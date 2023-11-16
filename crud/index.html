@@ -44,7 +44,24 @@
         <tbody id="pets"></tbody>
     </table>
     <script>
-    
+        this.el = document.getElementById('pets');
+        let array = new Array();
+        listPet();
+        function listPet(){
+            let data = '';
+            if (this.array.length>0){
+                for (let i=0;i < this.array.length; i++){
+                    data += '<tr>';
+                    data += '<td>' + this.array[i].nome + '</td>';
+                    data += '<td>' + this.array[i].idade + '</td>';
+                    data += '<td>' + this.array[i].tutor + '</td>';
+                    data += '<td><button onclick=Edit('+i+')>Edit </button></td>';
+                    data += '<td><button onclick=Delete('+i+')>Delete </button></td>';
+                    data += '</tr>';
+                }
+            }
+            return this.el.innerHTML = data;
+        }
     </script>
 </body>
 </html>
