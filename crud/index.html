@@ -45,7 +45,7 @@
     </table>
     <script>
         this.el = document.getElementById('pets');
-        let array = new Array();
+        var array = new Array();
         listPet();
         function listPet(){
             let data = '';
@@ -62,7 +62,13 @@
             }
             return this.el.innerHTML = data;
         }
+        function limparCampos(){
+            let nome = document.getElementById('pet').value = null;
+            let idade = document.getElementById('idade').value = null;
+            let tutor = document.getElementById('tutor').value = null;
 
+            return 0;
+        }
         function cadPet(){
             let nome = document.getElementById('pet');
             let idade = document.getElementById('idade');
@@ -77,6 +83,7 @@
                 array.push(objPet);
             }
             listPet();
+            limparCampos();
         }
     </script>
 </body>
