@@ -4,12 +4,6 @@
 - realiza animações;
 - AJAX (carrega os elementos da página, sem que haja a necessidade de dar um refresque na página);
 - é uma biblioteca do javascript;
--  
-
-
-
-
-
-
-
+- $(seletor).ação() -> comando básico | seletor: elemento que será manipulado; 
+- 
 -->

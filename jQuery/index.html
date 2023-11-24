@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <p>aula sobre jQuery ;)</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <div class="text-center bg-light text-to-hide">
+        <span>Me Esconda</span>
+    </div>
+
+    <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque hic, enim voluptate necessitatibus sint autem quae consequuntur quas quis consequatur totam laboriosam atque ea unde saepe numquam quos blanditiis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod ipsa eius expedita tenetur nisi placeat nam suscipit mollitia deleniti molestias rem, repellendus consequatur optio dolore, dolores nostrum quas inventore reprehenderit.</p>
+    <button>clique aqui!</button>
+
+    <script>
+        $(function(){
+            alert('olá');
+            $('span').hide();
+        
+            $('button').click(function(){
+                $('#paragrafo').hide();
+            })
+        });
+    </script>
+</body>
+</html>
