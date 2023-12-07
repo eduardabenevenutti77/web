@@ -7,9 +7,9 @@ http.createServer(function(rep, res){
     res.end();
 }).listen(8081); //porta
 
-http.createServer(function(rep, res){
+http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type':'text/html'});
-    res.write(rep.url); //função que será executada
+    res.write(req.url); //função que será executada
     res.end();
 }).listen(8082); //porta
 
